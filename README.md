@@ -84,11 +84,11 @@ Make sure you have installed:
 
 2️⃣ Clone Repository
 
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/editpeakstudio-star/Vibecheck-Media.git
 
 3️⃣ Navigate to Project
 
-cd Vibecheck-Media-
+cd Vibecheck-Media
 
 4️⃣ Install Dependencies
 
