@@ -13,7 +13,6 @@ export const BRAND = {
   whatsappRaw: '917310968060',
   phone: '+91 73109 68060',
   logoImage: '/assets/aistudio/IMG-20261116-WA0005_062f2d47.jpg',
-  founderPortraitImage: '/assets/aistudio/ravi_portrait.jpg',
   founderBannerImage: '/assets/aistudio/IMG-20261116-WA0006_acdd7f18.jpg',
 };
 

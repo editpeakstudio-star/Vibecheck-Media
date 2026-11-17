@@ -33,17 +33,17 @@ export const PortfolioSection: React.FC = () => {
   };
 
   return (
-    <section id="portfolio" className="relative py-20 sm:py-28 bg-[#050407]">
-      <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8">
+    <section id="portfolio" className="relative py-24 sm:py-32 bg-[#050407]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 sm:mb-12 gap-4 sm:gap-6 text-left">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6 text-left">
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 text-xs font-mono tracking-widest text-purple-400 uppercase mb-3">
               <span className="w-1.5 h-1.5 rounded-full bg-[#BD00FF]" />
               <span>FEATURED WORK</span>
             </div>
-            <h2 className="text-2xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-tight">
               Selected Projects.{' '}
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#BD00FF] via-purple-300 to-white">
@@ -53,7 +53,7 @@ export const PortfolioSection: React.FC = () => {
           </div>
 
           {/* Interactive Category Filter Tabs */}
-          <div className="flex flex-wrap items-center gap-1 sm:gap-1.5 p-1 rounded-xl bg-purple-950/30 border border-purple-500/20 max-w-full">
+          <div className="flex flex-wrap items-center gap-1.5 p-1 rounded-xl bg-purple-950/30 border border-purple-500/20">
             {categories.map((cat) => (
               <button
                 key={cat}

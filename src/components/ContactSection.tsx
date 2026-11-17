@@ -96,36 +96,36 @@ export const ContactSection: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="relative py-20 sm:py-28 bg-[#050407] border-t border-purple-500/10">
+    <section id="contact" className="relative py-24 sm:py-32 bg-[#050407] border-t border-purple-500/10">
       {/* Background Glows */}
       <div className="absolute top-1/4 left-1/4 w-80 h-80 bg-[#8500FF]/15 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#BD00FF]/15 rounded-full blur-[140px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
-        <div className="max-w-3xl mb-12 sm:mb-16 text-left">
+        <div className="max-w-3xl mb-16 text-left">
           <div className="inline-flex items-center gap-2 text-xs font-mono tracking-widest text-purple-400 uppercase mb-3">
             <span className="w-1.5 h-1.5 rounded-full bg-[#BD00FF]" />
             <span>START A PROJECT</span>
           </div>
-          <h2 className="text-2xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-tight mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-tight mb-4">
             Let's Build Something{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#BD00FF] via-purple-300 to-white">
               Amazing Together.
             </span>
           </h2>
-          <p className="text-xs sm:text-base text-zinc-300 leading-relaxed">
+          <p className="text-base text-zinc-300 leading-relaxed">
             Have an idea, a project, or a brand that needs a creative upgrade? Let's discuss how VibeCheck Media can help.
           </p>
         </div>
 
         {/* Contact Grid: Details + Working Form */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           
           {/* Left Column: Direct Agency Channels & Verification */}
           <div className="lg:col-span-5 flex flex-col gap-6 text-left">
-            <div className="rounded-2xl p-5 sm:p-7 bg-[#0c0618] border border-purple-500/20 shadow-xl shadow-black/40 space-y-5 sm:space-y-6">
+            <div className="rounded-2xl p-7 bg-[#0c0618] border border-purple-500/20 shadow-xl shadow-black/40 space-y-6">
               <h3 className="text-xl font-bold text-white tracking-tight">
                 Direct Channels
               </h3>
@@ -204,8 +204,8 @@ export const ContactSection: React.FC = () => {
 
           {/* Right Column: High-Conversion Validated Inquiry Form */}
           <div className="lg:col-span-7">
-            <div className="rounded-2xl p-4 sm:p-7 md:p-9 bg-[#0b0517] border border-purple-500/30 shadow-[0_0_35px_rgba(133,0,255,0.15)] relative text-left">
-              <div className="flex items-center justify-between mb-5 sm:mb-6">
+            <div className="rounded-2xl p-7 sm:p-9 bg-[#0b0517] border border-purple-500/30 shadow-[0_0_35px_rgba(133,0,255,0.15)] relative text-left">
+              <div className="flex items-center justify-between mb-6">
                 <div>
                   <h3 className="text-xl font-bold text-white tracking-tight">
                     Project Inquiry Form

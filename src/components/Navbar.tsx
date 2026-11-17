@@ -67,26 +67,26 @@ export const Navbar: React.FC<NavbarProps> = ({ onReplayIntro }) => {
           : 'bg-transparent py-5 border-b border-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between gap-2 sm:gap-4 md:gap-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between gap-8">
           {/* Zone 1: Brand Wordmark & Official Logo */}
           <a
             href="#home"
             onClick={(e) => handleNavClick(e, '#home')}
-            className="flex items-center gap-2 sm:gap-3 shrink min-w-0 group focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-400 rounded-lg"
+            className="flex items-center gap-3 shrink-0 group focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-400 rounded-lg"
           >
-            <div className="relative w-8 h-8 sm:w-9 sm:h-9 rounded-lg overflow-hidden border border-purple-500/40 bg-black/60 p-0.5 group-hover:border-purple-400 transition-colors shadow-[0_0_15px_rgba(133,0,255,0.3)] shrink-0">
+            <div className="relative w-9 h-9 rounded-lg overflow-hidden border border-purple-500/40 bg-black/60 p-0.5 group-hover:border-purple-400 transition-colors shadow-[0_0_15px_rgba(133,0,255,0.3)]">
               <img
                 src={BRAND.logoImage}
                 alt="VibeCheck Media"
                 className="w-full h-full object-contain"
               />
             </div>
-            <div className="flex flex-col min-w-0">
-              <span className="text-sm sm:text-base md:text-lg font-bold tracking-tight text-white group-hover:text-purple-300 transition-colors truncate">
+            <div className="flex flex-col">
+              <span className="text-lg font-bold tracking-tight text-white group-hover:text-purple-300 transition-colors whitespace-nowrap">
                 VIBECHECK <span className="text-purple-400">MEDIA</span>
               </span>
-              <span className="hidden sm:block text-[9px] sm:text-[10px] font-mono tracking-widest text-zinc-400 uppercase -mt-0.5 truncate">
+              <span className="text-[10px] font-mono tracking-widest text-zinc-400 uppercase -mt-0.5">
                 GROWTH AGENCY
               </span>
             </div>
@@ -117,7 +117,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onReplayIntro }) => {
           </nav>
 
           {/* Zone 3: Primary Action & Controls */}
-          <div className="flex items-center gap-1.5 sm:gap-3 shrink-0">
+          <div className="flex items-center gap-3 shrink-0">
             {/* Audio Toggle */}
             <button
               onClick={toggleSound}
@@ -148,10 +148,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onReplayIntro }) => {
             <a
               href="#contact"
               onClick={(e) => handleNavClick(e, '#contact')}
-              className="relative inline-flex items-center justify-center gap-1.5 px-2.5 sm:px-4 md:px-5 py-1.5 sm:py-2 text-xs sm:text-sm font-semibold tracking-wide text-white rounded-lg bg-gradient-to-r from-[#8500FF] to-[#BD00FF] hover:from-[#9510FF] hover:to-[#CD10FF] shadow-[0_0_15px_rgba(133,0,255,0.4)] whitespace-nowrap cursor-pointer shrink-0"
+              className="relative inline-flex items-center justify-center gap-2 px-4 sm:px-5 py-2 text-xs sm:text-sm font-semibold tracking-wide text-white rounded-lg bg-gradient-to-r from-[#8500FF] to-[#BD00FF] hover:from-[#9510FF] hover:to-[#CD10FF] shadow-[0_0_20px_rgba(133,0,255,0.5)] hover:shadow-[0_0_30px_rgba(189,0,255,0.7)] transition-all transform hover:-translate-y-0.5 whitespace-nowrap cursor-pointer"
             >
               <span>Let's Talk</span>
-              <ArrowRight className="w-3.5 h-3.5 hidden xs:inline" />
+              <ArrowRight className="w-3.5 h-3.5" />
             </a>
 
             {/* Mobile Hamburger Toggle */}
@@ -159,9 +159,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onReplayIntro }) => {
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               type="button"
               aria-label="Toggle navigation menu"
-              className="md:hidden flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 rounded-lg border border-purple-500/30 bg-purple-950/40 text-white hover:text-purple-300 focus:outline-none cursor-pointer shrink-0"
+              className="md:hidden flex items-center justify-center w-10 h-10 rounded-lg border border-purple-500/30 bg-purple-950/40 text-white hover:text-purple-300 focus:outline-none cursor-pointer"
             >
-              {mobileMenuOpen ? <X className="w-4 h-4 sm:w-5 sm:h-5" /> : <Menu className="w-4 h-4 sm:w-5 sm:h-5" />}
+              {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
           </div>
         </div>

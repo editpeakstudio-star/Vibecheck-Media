@@ -34,29 +34,29 @@ export const AboutSection: React.FC = () => {
   ];
 
   return (
-    <section id="about" className="relative py-20 sm:py-28 bg-[#08040d]/80 border-t border-purple-500/10">
-      <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8">
+    <section id="about" className="relative py-24 sm:py-32 bg-[#08040d]/80 border-t border-purple-500/10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="max-w-3xl mb-12 sm:mb-16 text-left">
+        <div className="max-w-3xl mb-16 text-left">
           <div className="inline-flex items-center gap-2 text-xs font-mono tracking-widest text-purple-400 uppercase mb-3">
             <span className="w-1.5 h-1.5 rounded-full bg-[#BD00FF]" />
             <span>WHO WE ARE</span>
           </div>
-          <h2 className="text-2xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-tight mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-tight mb-5">
             More Than Creativity.{' '}
             <br className="hidden sm:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-purple-200 to-purple-400">
               We Create Impact.
             </span>
           </h2>
-          <p className="text-xs sm:text-base md:text-lg text-zinc-300 leading-relaxed">
+          <p className="text-base sm:text-lg text-zinc-300 leading-relaxed">
             VibeCheck Media is a creative digital agency focused on helping brands establish a powerful online presence through creative storytelling, strategic content, and modern digital solutions.
           </p>
         </div>
 
         {/* 3 Premium Pillar Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {cards.map((card) => {
             const Icon = card.icon;
             return (

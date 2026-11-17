@@ -22,23 +22,23 @@ export const ProcessSection: React.FC = () => {
   };
 
   return (
-    <section id="process" className="relative py-20 sm:py-28 bg-[#08040d]/80 border-t border-purple-500/10">
-      <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8">
+    <section id="process" className="relative py-24 sm:py-32 bg-[#08040d]/80 border-t border-purple-500/10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="max-w-3xl mb-12 sm:mb-16 text-left">
+        <div className="max-w-3xl mb-16 text-left">
           <div className="inline-flex items-center gap-2 text-xs font-mono tracking-widest text-purple-400 uppercase mb-3">
             <span className="w-1.5 h-1.5 rounded-full bg-[#BD00FF]" />
             <span>HOW WE WORK</span>
           </div>
-          <h2 className="text-2xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-tight mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-tight mb-5">
             Our Working Process.{' '}
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#BD00FF] via-purple-300 to-white">
               From Concept to Scale.
             </span>
           </h2>
-          <p className="text-xs sm:text-base text-zinc-300 leading-relaxed">
+          <p className="text-base text-zinc-300 leading-relaxed">
             A seamless four-stage production framework engineered to turn raw ideas into high-converting brand equity.
           </p>
         </div>
@@ -49,7 +49,7 @@ export const ProcessSection: React.FC = () => {
           <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 -translate-y-8 bg-gradient-to-r from-purple-900 via-[#8500FF] to-purple-900 shadow-[0_0_15px_rgba(133,0,255,0.4)] z-0" />
 
           {/* Steps Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-8 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative z-10">
             {PROCESS_STEPS.map((step, idx) => {
               const Icon = getStepIcon(step.icon);
               const isActive = activeStep === idx;

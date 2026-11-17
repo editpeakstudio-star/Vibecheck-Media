@@ -12,7 +12,7 @@ export const FloatingWhatsApp: React.FC = () => {
     const handleScroll = () => {
       const totalScroll = document.documentElement.scrollHeight - window.innerHeight;
       const currentScroll = window.scrollY;
-      setShowBackToTop(currentScroll > 550);
+      setShowBackToTop(currentScroll > 320);
 
       if (totalScroll > 0) {
         setScrollProgress(Math.min((currentScroll / totalScroll) * 100, 100));
@@ -29,14 +29,14 @@ export const FloatingWhatsApp: React.FC = () => {
   };
 
   return (
-    <div className="fixed bottom-4 right-3.5 sm:bottom-6 sm:right-6 z-40 flex flex-col items-end gap-2.5 pointer-events-auto">
+    <div className="fixed bottom-6 right-6 z-40 flex flex-col items-end gap-3 pointer-events-auto">
       {/* Back to top with circular scroll progress */}
       {showBackToTop && (
         <button
           type="button"
           onClick={scrollToTop}
           aria-label="Back to top"
-          className="relative w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-[#0c0618]/90 backdrop-blur-md border border-purple-500/40 text-purple-300 hover:text-white hover:border-purple-300 transition-all shadow-lg shadow-black/60 flex items-center justify-center cursor-pointer group shrink-0"
+          className="relative w-11 h-11 rounded-full bg-[#0c0618]/90 backdrop-blur-md border border-purple-500/40 text-purple-300 hover:text-white hover:border-purple-300 transition-all shadow-lg shadow-black/60 flex items-center justify-center cursor-pointer group"
         >
           {/* Circular SVG progress track */}
           <svg className="absolute inset-0 w-full h-full -rotate-90 pointer-events-none" viewBox="0 0 36 36">

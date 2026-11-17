@@ -27,7 +27,7 @@ export const Footer: React.FC<FooterProps> = ({ onReplayIntro }) => {
       {/* Ambient background glow */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-48 bg-[#8500FF]/10 blur-[120px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-purple-500/15">
           
           {/* Col 1: Brand Info & Official Logo (4 cols) */}

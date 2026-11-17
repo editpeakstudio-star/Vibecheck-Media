@@ -33,28 +33,28 @@ export const WhyChooseUsSection: React.FC = () => {
   };
 
   return (
-    <section className="relative py-20 sm:py-28 bg-[#08040d]/70 border-t border-purple-500/10">
-      <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8">
+    <section className="relative py-24 sm:py-32 bg-[#08040d]/70 border-t border-purple-500/10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
-        <div className="max-w-3xl mb-12 sm:mb-16 text-left">
+        <div className="max-w-3xl mb-16 text-left">
           <div className="inline-flex items-center gap-2 text-xs font-mono tracking-widest text-purple-400 uppercase mb-3">
             <span className="w-1.5 h-1.5 rounded-full bg-[#BD00FF]" />
             <span>THE VIBECHECK ADVANTAGE</span>
           </div>
-          <h2 className="text-2xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-tight mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-tight mb-5">
             Why Brands Choose{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#BD00FF] via-purple-300 to-white">
               VibeCheck Media
             </span>
           </h2>
-          <p className="text-xs sm:text-base text-zinc-300 leading-relaxed">
+          <p className="text-base text-zinc-300 leading-relaxed">
             We don't do low-effort templates or vanity metrics. We construct bespoke creative systems designed to build genuine market authority.
           </p>
         </div>
 
         {/* 6 Interactive Feature Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {WHY_CHOOSE_US.map((item) => {
             const Icon = getIcon(item.icon);
             return (
